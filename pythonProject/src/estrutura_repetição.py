@@ -70,6 +70,39 @@
 
 
 # # Estrutura de repetição for com string
-computador =  ['Monitor', 'Teclado', 'Mouse']
-for i in computador:
-    print(i)
+# computador =  ['Monitor', 'Teclado', 'Mouse']
+# for i in computador:
+#     print(i)
+
+
+# Ver tamanho da lista
+lista = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+print(len(lista))
+
+
+# # Adicionar elementos na lista
+# lista.append(10)
+# print(lista)
+
+
+# # Remover elementos da lista
+# lista.remove(10)
+# print(lista)
+
+
+# # Remover elementos da lista
+# lista.pop(0)
+# print(lista)
+
+
+# # Remover elementos da lista pelo indice
+# del lista[2]
+# print(lista)
+
+
+#localizar elemnto especifico na lista
+elemento = int(input("Digite um número: "))
+if elemento in lista:
+    print("O número {elemento} está na lista")
+else:
+    print("O número {elemento} não está na lista")
