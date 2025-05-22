@@ -1,40 +1,21 @@
-import negocios_estoque
+from tkinter import *
+menu_inicial = Tk()
+menu_inicial.title("Sistema de Controle de Estoque")
+# menu_inicial.geometry("500x500") # Definindo o tamanho da janela
+menu_inicial.geometry("400x400+500+100") # Definindo o tamanho e a posição da janela
+menu_inicial.minsize(400, 400) # Definindo o tamanho mínimo da janela
+menu_inicial.maxsize(600, 600) # Definindo o tamanho máximo da janela
+menu_inicial.configure(bg="#7b659e") # Definindo a cor de fundo da janela
+menu_inicial.configure(cursor="hand2") # Definindo o cursor da janela
+menu_inicial.resizable(width=False, height=False) # Definindo se a janela pode ser redimensionada
+# menu_inicial.state("iconic") # Definindo o estado inicial da janela
+# menu_inicial.state("zoomed") # Definindo o estado inicial da janela
+menu_inicial.iconbitmap("icone.ico") # Definindo o ícone da janela
 
-def menu():
-    while True:
-        print("\n= = Controle de Estoque = =")
-        print("1. Adicionar produto")
-        print("2. Listar produto")
-        print("3. Alterar produto")
-        print("4. Excluir produto")
-        print("0. Sair")
-        print("= = = = = = = = = = = = = =")
 
-        opcao = input("Escolha uma opção: ")
 
-        if opcao == '1':
-            print("\n= = Adicionar Produto = =")
-            negocios_estoque.adionar_item()
 
-        elif opcao == '2':
-            print("\n= = Listar Produto = =")
-            negocios_estoque.listar_estoque()
 
-        elif opcao == '3':
-            print("\n= = Alterar Produto = =")
-            negocios_estoque.alterar_item()
 
-        elif opcao == '4':
-            print("\n= = Excluir Produto = =")
-            negocios_estoque.excluir_item()
-            
-        elif opcao == '0':
-            print("Saindo do programa...")
-            break
-        else:
-            print("Opção inválida! Tente novamente.")
 
-menu()
-            
-
-     
+menu_inicial.mainloop()
